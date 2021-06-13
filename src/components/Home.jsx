@@ -1,4 +1,4 @@
-import React, {  useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Card from './Card';
 
 const Home = () => {
@@ -8,19 +8,18 @@ const Home = () => {
     let url = 'http://localhost:8000/characters/';
     let getFetchData = await fetch(url).then((result) => result.json());
     setCharacters(getFetchData);
-  }
+  };
 
   useEffect(() => {
     getData();
   }, []);
 
   return (
-    <div>
+    <div className='get-cards'>
       {characters &&
-        characters.map(character =>
-          <Card character={character}
-          key={character.name} />
-        )}
+        characters.map((character) => (
+          <Card character={character} key={character.name} />
+        ))}
     </div>
   );
 };
