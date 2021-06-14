@@ -17,6 +17,20 @@
 - 🚀 podrás ver la información de los personajes de Harry Potter en tarjetas.
 
 # Anotaciones sobre el MVP
+- Trabaje con la metodología Agile Scrum haciendo planeación con el tablero Kanban de GitHub Projects, realicé dailys y restrospectivas al finalizar el día, esto me hizo equilibrar mi trabajo y esfuerzos en implementación de funcionalidad a la par del estilo.
+
+Abordé el proyecto con historias de usuario llegando a un MVP:
+- El usuario puede ver todos los personajes de Harry Potter al entrar a la página
+- Puede identificar el estatus de vida de los personajes con una leyenda en las tarjetas o con un color de tarjeta.
+- Puede identificar cúales personajes son "Estudiantes", "Maestros" a travez de un filtro por botones.
+- Puede identificar qué personajes pertenecen a una casa por el color de la tarjeta.
+
+Un clip del proyecto desplegado en local:
+https://www.loom.com/share/d2cb3f4588f44479aa88dac7c2ecca6b
+
+Proyecto desplegado en Netlify:
+https://happy-babbage-153716.netlify.app/
+
 
 ## ¿Qué es lo qué mas te gustó de tu desarrollo?
 Este proyecto de 1 sprint de 2 días me enfrentó a nuevos retos que representarón nuevos conocimientos:
@@ -29,7 +43,7 @@ Como siguientes pasos quisiera dar funcionalidad al modal para crear data (añad
 
 ## Descríbenos un pain point o bug con el que te hayas encontrado y como lo solucionaste
 - El de renderizar estilos por condiciones de información, pensé me iban a demorar más tiempo pude solucionarlos cuando los pensé como un algoritmo a resolver.
-- Me siento comoda haciendo peticiones a APIs, decidí hacerlo con Json server y la libreria Axios, la petición GET no me devolvia respuesta... Creo que con otra perspectiva podría solucionarlo.
+- Decidí hacerlo las peticiones a la API con Json server y la libreria Axios, la petición GET no me devolvia respuesta... Revisé la terminal donde la desplegué, me dío algunos indicios por donde buscar solución, CORS, endpoint...
 
 
 
