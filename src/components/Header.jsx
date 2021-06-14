@@ -1,6 +1,5 @@
 import React from 'react';
 import logo from '../assets/Harry_Potter_wordmark 1.png';
-import Navbar from './Navbar';
 
 const Header = () => {
   return (
@@ -14,9 +13,6 @@ const Header = () => {
           <a href='/'>
             <img src={logo} className='header-img'/>
           </a>
-        </section>
-        <section className='header-navbar'>
-          <Navbar />
         </section>
       </section>
     </div>

@@ -1,0 +1,56 @@
+// -- card text --
+h3{
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: $notes;
+}
+
+h1 {
+  font-weight: normal;
+    font-size: 30px;
+    color: $headingText;
+}
+
+ul {
+  list-style: none;
+  li {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    color: $bodyText;
+    span {
+      font-weight: normal;
+      line-height: 27px;
+    }
+  }
+}
+
+// -- header top buttons text --
+.header-top-btnFav, .header-top-btnAdd {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 25px;
+  text-align: center;
+  color: $primary;
+}
+
+
+// -- header text --
+h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 25px;
+  text-align: center;
+  color:$primary;
+}
+
+// -- navbar filter text --
+.btnStudents, .btnStaff {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  color: $primary;
+}

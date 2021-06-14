@@ -1,0 +1,85 @@
+.flex {
+  display: flex;
+  padding: 25px 25px 25px 25px;
+}
+
+  .card {
+  display: flex;
+  overflow: hidden;
+  width: 515px;
+  height: 265px;
+  border-radius: 16px;
+  &-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 210px;
+    &-photo {
+      clip-path: circle();
+      overflow: hidden;
+      height: 230.31px;
+      width: 169.3px;
+    }
+  }
+
+  &-body {
+    display: flex;
+    flex-direction: column;
+    width: 305px;
+    align-items: flex-start;
+  }
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    width: 305px;
+
+    &-note {
+      margin:0px;
+      padding-top: 22px;
+      padding-left: 22px;
+    }
+    &-btn{
+      margin:0px;
+      padding-top: 22px;
+      padding-right: 22px;
+    }
+  }
+  &-title {
+    padding-top: 20px;
+    padding-left: 22px;
+    padding-bottom: 0px;
+    margin: 0px;
+  }
+  &-text {
+    padding-top: 21px;
+    padding-left: 22px;
+    margin: 0px;
+  }
+}
+
+#card-live {
+  background-color: $primary;
+}
+#card-dead {
+  background-color: $secondary;
+}
+
+#card-img-slytherin{
+  background: $slytherin;
+}
+#card-img-gryffindor{
+  background: $gryffindor;
+}
+#card-img-ravenclaw{
+  background: $ravenclaw;
+}
+#card-img-hufflepuff{
+  background: $hufflepuff;
+}
+#card-img-unknown{
+  background: $secondary;
+}
+
+
+

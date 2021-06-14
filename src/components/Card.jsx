@@ -1,8 +1,7 @@
 import React, { Fragment } from 'react';
 import favBtn from '../assets/rectangle1.png';
 
-const Card = ({ character }) => {
-
+const Card = ({ character}) => {
   const {
     name,
     dateOfBirth,
@@ -13,6 +12,7 @@ const Card = ({ character }) => {
     hogwartsStudent,
     hogwartsStaff,
     image,
+    house
   } = character;
 
   const isDeadOrAlive = () => {
@@ -21,6 +21,15 @@ const Card = ({ character }) => {
       return 'VIVO';
     } else {
       return 'FINADO';
+    }
+  };
+
+  const isDeadOrAliveColor = () => {
+    const live = alive;
+    if (live == true) {
+      return 'card-live';
+    } else {
+      return 'card-dead';
     }
   };
 
@@ -34,37 +43,52 @@ const Card = ({ character }) => {
     }
   };
 
+  const houseColor = () => {
+    if (house === 'Slytherin') {
+      return 'card-img-slytherin';
+    }else if(house === 'Gryffindor'){
+      return 'card-img-gryffindor';
+    }else if(house === 'Ravenclaw'){
+      return 'card-img-ravenclaw';
+    }else if(house === 'Hufflepuff'){
+      return 'card-img-hufflepuff';
+    }else{
+      return 'card-img-unknown'
+    }
+  };
+
+
+
   return (
     <div className='flex'>
       {character && (
         <Fragment>
-          <article className='card'>
-            <div className='card-img'>
+          <article className='card' id={isDeadOrAliveColor()}>
+            <div className='card-img' id={houseColor()}>
               <img src={image} className='card-img-photo' />
             </div>
             <div className='card-body'>
               <div className='card-header'>
-                <p className='card-header-note'>
+                <h3 className='card-header-note'>
                   {isDeadOrAlive()} / {isStudentOrStaff()}
-                </p>
+                </h3>
                 <img src={favBtn} className='card-header-btn' />
               </div>
-              <p className='card-title'>{name}</p>
-              <p className='card-subtitle'>
-                Cumpleaños:
-                <span className='card-subtitle-text'>{dateOfBirth}</span>
-              </p>
-              <p className='card-subtitle'>
-                Género: <span className='card-subtitle-text'>{gender}</span>
-              </p>
-              <p className='card-subtitle'>
-                Color de ojos:
-                <span className='card-subtitle-text'>{eyeColour}</span>
-              </p>
-              <p className='card-subtitle'>
-                Color de pelo:
-                <span className='card-subtitle-text'>{hairColour}</span>
-              </p>
+              <h1 className='card-title'>{name}</h1>
+              <ul className='card-text'>
+                <li>
+                  Cumpleaños: <span>{dateOfBirth}</span>
+                </li>
+                <li>
+                  Género: <span>{gender}</span>
+                </li>
+                <li>
+                  Color de ojos: <span>{eyeColour}</span>
+                </li>
+                <li>
+                  Color de pelo: <span >{hairColour}</span>
+                </li>
+              </ul>
             </div>
           </article>
         </Fragment>
