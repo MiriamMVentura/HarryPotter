@@ -17,7 +17,6 @@ const Home = () => {
 
   const handleBtns= (e)=>{
     let word = e.target.value;
-    // console.log(word)
     if(word === 'students' ){
       const filtered = data.filter(character=>character.hogwartsStudent === true);
       return setCharacters(filtered);
@@ -29,10 +28,11 @@ const Home = () => {
 
   return (
     <Fragment>
+      <h2>Selecciona tu filtro</h2>
     <div className='navFilter'>
-      <button className='btnStudents'
+      <button className='btnFilter'
       value='students' onClick={handleBtns}>ESTUDIANTES</button>
-      <button className='btnStudents'
+      <button className='btnFilter'
       value='staff' onClick={handleBtns}>STAFF</button>
     </div>
     <div className='get-cards'>

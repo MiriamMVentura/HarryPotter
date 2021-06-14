@@ -39,6 +39,7 @@ ul {
 // -- header text --
 h2 {
   font-weight: bold;
+  font-style: normal;
   font-size: 36px;
   line-height: 25px;
   text-align: center;
@@ -46,7 +47,7 @@ h2 {
 }
 
 // -- navbar filter text --
-.btnStudents, .btnStaff {
+.btnFilter{
   font-weight: 600;
   font-size: 17px;
   line-height: 25px;
