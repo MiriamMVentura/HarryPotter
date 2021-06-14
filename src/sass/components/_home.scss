@@ -1,0 +1,30 @@
+h2{
+  padding-top: 0px;
+  padding-bottom: 61px;
+}
+
+.navFilter{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btnFilter{
+  width: 288px;
+  height: 67px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 4px solid $menu;
+  border-radius: 4px;
+  &:hover{
+    background-color: lighten($color: $menu, $amount: 10);
+  }
+  &:active{
+    background-color: $menu;
+  }
+}
+
+.get-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 95px 65px 50px 65px;
+}

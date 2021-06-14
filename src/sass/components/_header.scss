@@ -1,0 +1,54 @@
+.header{
+  display: flex;
+  flex-direction: column;
+}
+
+.header-top{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-right: 111px;
+  height: 36px;
+
+
+  &-btnFav{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: $menu;
+    height: 36px;
+    width: 138px;
+    padding:0px;
+    margin: 0px;
+    border-bottom-left-radius: 10px;
+    border: 4px solid $menu;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  &-btnAdd{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: $menu;
+    height: 36px;
+    width: 128px;
+    padding:0px;
+    margin: 0px;
+    border-bottom-right-radius: 10px;
+    border: 1px solid $menu;
+    border-left-color: $menuborder;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.header-logo{
+  display: flex;
+  justify-content: center;
+  margin:0px;
+  padding-top: 106px;
+  padding-bottom: 31px;
+  &-img{
+    width: 193.8px;
+    height: 66px;
+  }
+}
