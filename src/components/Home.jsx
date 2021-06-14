@@ -1,14 +1,13 @@
 import React, { useEffect, useState, Fragment} from 'react';
 import Card from './Card';
 import data from '../api/hp-characters.json'
+import axios from 'axios';
 
 const Home = () => {
   const [characters, setCharacters] = useState();
 
-  let getData = async () => {
-    let url = 'http://localhost:8000/characters/';
-    let getFetchData = await fetch(url).then((result) => result.json());
-    setCharacters(getFetchData);
+  const getData = async () => {
+    axios.get('http://localhost:8000/characters').then(({ data: data}) => setCharacters(data));
   };
 
   useEffect(() => {

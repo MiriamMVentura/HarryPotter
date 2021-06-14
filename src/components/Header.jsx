@@ -5,8 +5,9 @@ import btnAdd from '../assets/User_fill_add.png';
 import Modal  from './Modal'
 
 
+
 const Header = () => {
-  const [isOpenModal, setIsOpenModal]= useState(true);
+  const [isOpenModal, setIsOpenModal]= useState(false);
 
   // const [isOpenModal, openModal, closeModal]= useModal();
 
