@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# Harry Potter UI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Índice
 
-## Available Scripts
+* [1. Como desplegar este proyecto](#como-desplegar-este-proyecto)
+* [2. Anotaciones sobre el MVP](#anotaciones-sobre-el-mvp)
 
-In the project directory, you can run:
+# Como desplegar este proyecto
+- Asegurate de tener un 📝 editor de texto en condiciones, algo como Atom o Visual Studio Code.
+- Para ejecutar los comandos a continuación necesitarás una 🐚 UNIX Shell, que es un programita que interpreta líneas de comando (command-line interpreter) así como tener git instalado. Si usas un sistema operativo "UNIX-like", como GNU/Linux o MacOS, ya tienes una shell (terminal) instalada por defecto (y probablemente git también). Si usas Windows puedes usar la versión completa de Cmder que incluye Git bash y si tienes Windows 10 o superior puedes usar Windows Subsystem for Linux.
+- Puedes hacer 🍴 fork este repo
+- ⬇️ Clona tu fork a tu computadora (copia local).
+- 📦 Instala las dependencias del proyecto con el comando npm install. Nota: nececistas tener instalado Node.js (que incluye npm).
+- Este proyecto emplea una Api "falsa" por lo que antes de arrancar ejecuta el comando "npm run mock-api" para levantar el servidor con Json Server (que ya viene incluido en las dependencias), podrás ver la data en json dirigiendote http://localhost:8000/characters en tu navegador.
+- Si todo ha ido bien, deberías poder ejecutar el proyecto de React con el comando "npm run start", dirígete a http://localhost:5000 en tu navegador.
 
-### `npm start`
+- 🚀 podrás ver la información de los personajes de Harry Potter en tarjetas.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Anotaciones sobre el MVP
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## ¿Qué es lo qué mas te gustó de tu desarrollo?
+Este proyecto de 1 sprint de 2 días me enfrentó a nuevos retos que representarón nuevos conocimientos:
+- Fue la primera vez que usé el procesador de Css Sass para dar estilo, me demoró un poco entenderlo y aunque no pude llevarlo al maximo, creo que lleve bien la curva de aprendizaje en este sprint, sin duda seguré explorandolo en este proyecto y en otros más.
+- Aunque no logré implementar la colección de favoritos con Redux, lo que investigué en spikes me parece una buena herramienta para continuar prendiendo del state en React.
 
-### `npm test`
+## Si hubieras tenido más tiempo ¿qué hubieras mejorado o qué más hubieras hecho?
+- CREAR DATA e implementar Pruebas Unitarias de lo que ya tengo construido.
+Como siguientes pasos quisiera dar funcionalidad al modal para crear data (añadir personajes) e implementar Redux para la hacer la colección de favoritos.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Descríbenos un pain point o bug con el que te hayas encontrado y como lo solucionaste
+- El de renderizar estilos por condiciones de información, pensé me iban a demorar más tiempo pude solucionarlos cuando los pensé como un algoritmo a resolver.
+- Me siento comoda haciendo peticiones a APIs, decidí hacerlo con Json server y la libreria Axios, la petición GET no me devolvia respuesta... Creo que con otra perspectiva podría solucionarlo.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
