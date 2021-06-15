@@ -24,9 +24,10 @@ Abordé el proyecto con historias de usuario llegando a un MVP:
 - Puede identificar el estatus de vida de los personajes con una leyenda en las tarjetas o con un color de tarjeta.
 - Puede identificar cúales personajes son "Estudiantes", "Maestros" a travez de un filtro por botones.
 - Puede identificar qué personajes pertenecen a una casa por el color de la tarjeta.
+** Puede identificar qué personajes tienen el estatus de Vivo
 
 Un clip del proyecto desplegado en local:
-https://www.loom.com/share/d2cb3f4588f44479aa88dac7c2ecca6b
+https://www.loom.com/share/96b87c71bd8547d69648957f1a9cfc4d
 
 Proyecto desplegado en Netlify:
 https://happy-babbage-153716.netlify.app/
