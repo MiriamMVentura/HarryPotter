@@ -8,12 +8,11 @@
 # Como desplegar este proyecto
 - Asegurate de tener un 📝 editor de texto en condiciones, algo como Atom o Visual Studio Code.
 - Para ejecutar los comandos a continuación necesitarás una 🐚 UNIX Shell, que es un programita que interpreta líneas de comando (command-line interpreter) así como tener git instalado. Si usas un sistema operativo "UNIX-like", como GNU/Linux o MacOS, ya tienes una shell (terminal) instalada por defecto (y probablemente git también). Si usas Windows puedes usar la versión completa de Cmder que incluye Git bash y si tienes Windows 10 o superior puedes usar Windows Subsystem for Linux.
-- Puedes hacer 🍴 fork este repo
+- Puedes hacer 🍴 fork este repositorio
 - ⬇️ Clona tu fork a tu computadora (copia local).
 - 📦 Instala las dependencias del proyecto con el comando npm install. Nota: nececistas tener instalado Node.js (que incluye npm).
 - Este proyecto emplea una Api "falsa" por lo que antes de arrancar ejecuta el comando "npm run mock-api" para levantar el servidor con Json Server (que ya viene incluido en las dependencias), podrás ver la data en json dirigiendote http://localhost:8000/characters en tu navegador.
 - Si todo ha ido bien, deberías poder ejecutar el proyecto de React con el comando "npm run start", dirígete a http://localhost:5000 en tu navegador.
-
 - 🚀 podrás ver la información de los personajes de Harry Potter en tarjetas.
 
 # Anotaciones sobre el MVP
@@ -30,7 +29,7 @@ Un clip del proyecto desplegado en local:
 https://www.loom.com/share/96b87c71bd8547d69648957f1a9cfc4d
 
 Proyecto desplegado en Netlify:
-https://happy-babbage-153716.netlify.app/
+https://peaceful-hamilton-ece60a.netlify.app/
 
 
 ## ¿Qué es lo qué mas te gustó de tu desarrollo?
