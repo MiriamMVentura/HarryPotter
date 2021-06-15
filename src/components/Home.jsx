@@ -22,8 +22,11 @@ const Home = () => {
     } else if(word === 'staff'){
         const filtered = data.filter(character=>character.hogwartsStaff === true);
         return setCharacters(filtered)
-      }
+      }else if(word === 'alive'){
+        const filtered = data.filter(character=>character.alive === true);
+        return setCharacters(filtered)
     }
+  }
 
   return (
     <Fragment>
@@ -33,6 +36,8 @@ const Home = () => {
       value='students' onClick={handleBtns}>ESTUDIANTES</button>
       <button className='btnFilter'
       value='staff' onClick={handleBtns}>STAFF</button>
+      <button className='btnFilter'
+      value='alive' onClick={handleBtns}>VIVO</button>
     </div>
     <div className='get-cards'>
       {characters &&
